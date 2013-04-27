@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Search Vehicles">
+		<message>
+			<![CDATA[Search Vehicles.]]>
+		</message>
+	</layout>
+	<state>
+		<name>Search Vehicles</name>
+		<description>Search Vehicles.</description>
+	</state>
+</metadata>

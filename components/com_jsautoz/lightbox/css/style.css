@@ -1,0 +1,244 @@
+#featured{ 
+	padding-right:250px; 
+	position:relative; 
+	border:5px solid #ccc; 
+	overflow:hidden;
+	background:#fff;
+}
+#featured ul.ui-tabs-nav{   
+	position:absolute; 
+	top:0; right:0px; 
+	list-style:none; 
+	padding:0; 
+	margin:0; 
+	width:250px; 
+	overflow:auto;
+	overflow-x:hidden;
+	background:url(../images/thumb_background.png);
+	background-size:100% 100%;
+}  
+#featured ul.ui-tabs-nav li{   
+	padding:1px 0; padding-left:13px;    
+	font-size:12px;   
+	color:#666;   
+}  
+#featured ul.ui-tabs-nav li span{   
+	font-size:11px; font-family:Verdana;   
+	line-height:18px;   
+}  
+#featured .ui-tabs-panel{      
+	background:#999; position:relative;  
+	overflow:hidden;border-right:3px solid #FFFFFF;  
+}  
+#featured .ui-tabs-hide{   
+	display:none;   
+}  
+#featured li.ui-tabs-nav-item a{/*On Hover Style*/   
+	display:block;   
+	height:65px;   
+	color:#333;
+	line-height:20px;  
+	outline:none;  
+	float:left;
+	width:95%;
+	margin-top: 5px;
+	margin-right:5%;
+	background:url('../images/thumb_bar.png');
+	background-size:100% 100%;
+	border:1px solid #FFFFFF;
+	border-radius:4px;
+}  
+#featured li.ui-tabs-nav-item a:hover{   
+border:1px solid #000000;
+}  
+#featured li.ui-tabs-selected{ /*Selected tab style*/  
+
+}  
+#featured ul.ui-tabs-nav li.ui-tabs-selected a,
+#featured ul.ui-tabs-nav li.ui-state-hover a,
+#featured ul.ui-tabs-nav li.ui-state-hover img,
+#featured ul.ui-tabs-nav li.ui-tabs-selected img{   
+border:1px solid #000000;
+background:url(../images/thumb_bar_selected.png);
+background-size:100% 100%;
+}  
+#featured ul.ui-tabs-nav li img{   
+float:left; margin:6px 6px;   
+background:#fff;   
+border:1px solid #FFFFFF;  
+border-radius:4px;
+}
+
+#featured ul.ui-tabs-nav li a span#vehicleshortdetail{
+	float:left;
+	display:inline-block;
+	width:140px;
+	margin-top:4px;
+}
+#featured ul.ui-tabs-nav li a span#vehicleshortdetail span{
+	width:100%;
+	float:left;
+	text-align:center;
+	color:#FFFFFF;
+}
+#featured ul.ui-tabs-nav li.ui-tabs-selected a span#vehicleshortdetail span,
+#featured ul.ui-tabs-nav li.ui-state-hover a span#vehicleshortdetail span{
+	color:#000000;
+}
+#featured ul.ui-tabs-nav li.ui-tabs-selected a span#vehicleshortdetail span#makemodel,
+#featured ul.ui-tabs-nav li.ui-state-hover a span#vehicleshortdetail span#makemodel{
+	color:#5d5656;
+}
+#featured ul.ui-tabs-nav li a span#vehicleshortdetail span#makemodel{
+	font-size:14px;
+	font-weight:bold;
+	color:#000000;
+	overflow:hidden;
+	height:15px;
+}
+
+#featured .ui-tabs-panel .info{   
+position:absolute;   
+bottom:0px; left:0;   
+height:70px; width: 250px;  
+background: url('../images/infobar.png');
+background-size:100% 100%;
+/*opacity:0.40;
+filter:alpha(opacity=40);*/
+}  
+#featured .ui-tabs-panel .info div#inforightside{
+position:absolute;
+left:250px;
+bottom:0;
+width:86px;
+height:70px;
+background:url('../images/infobarside.png') no-repeat;
+}
+#featured .info span#infoleft,#featured .info span#inforight{   
+/*font-size:18px; font-family:Georgia, serif;   
+color:#fff; padding:5px; margin:0;  
+overflow:hidden;   
+*/
+position:relative;
+float:left;
+display:inline-block;
+width:49.8%;
+border-right:1px solid #000000;
+height:48px;
+padding-right:4%;
+margin: 5px 0px 5px 5%;
+padding-top:12px;
+}  
+#featured .info span#inforight{
+border-left:1px solid #FFFFFF;
+border-right:none;
+padding-left:4%;padding-right:0px;
+margin: 5px 5% 5px 0px;
+width:29.8%;
+}
+#featured .info span#infoleft a{
+	font-size:22px;
+	display:block;
+	width:100%;
+	color:#FFFFFF;
+	text-shadow:0px 0px 3px #000000;
+	text-align:right;
+	padding-bottom:0px;
+	overflow:hidden;
+	line-height:22px;
+	height:22px;
+}
+#featured .info span#infoleft span#infoleftmakemodel,
+#featured .info span#inforight span#inforightmodel,
+#featured .info span#inforight span#inforightprice{
+	display:inline-block;
+	float:left;
+	width:100%;
+	font-size:15px;
+	color:#FFFFFF;
+	text-shadow:0px 0px 3px #000000;
+	text-align:right;
+}
+#featured .info span#inforight span#inforightmodel,
+#featured .info span#inforight span#inforightprice{
+	text-align:left;
+}
+
+/*
+#featured ul.ui-tabs-nav{ 
+	position:absolute; 
+	top:0; right:10px; 
+	list-style:none; 
+	padding:0; 
+	margin:0; 
+	width:250px; 
+	height:250px;
+	overflow:auto;
+	overflow-x:hidden;
+}
+#featured ul.ui-tabs-nav li{ 
+	padding:1px 0; 
+	padding-left:13px;  
+	font-size:12px; 
+	color:#666; 
+}
+#featured ul.ui-tabs-nav li img{ 
+	float:left; 
+	margin:2px 5px; 
+	background:#fff; 
+	padding:2px; 
+	border:1px solid #eee;
+}
+#featured ul.ui-tabs-nav li span{ 
+	font-size:11px; font-family:Verdana; 
+	line-height:18px; 
+}
+#featured li.ui-tabs-nav-item a{ 
+	display:block; 
+	height:60px; text-decoration:none;
+	color:#333;  background:#fff; 
+	line-height:20px; outline:none;
+}
+#featured li.ui-tabs-nav-item a:hover{ 
+	background:#f2f2f2; 
+}
+#featured li.ui-tabs-selected, #featured li.ui-tabs-active{ 
+	background:url('images/selected-item.gif') top left no-repeat;  
+}
+#featured ul.ui-tabs-nav li.ui-tabs-selected a, #featured ul.ui-tabs-nav li.ui-tabs-active a{ 
+	background:#ccc; 
+}
+#featured .ui-tabs-panel{ 
+	width:400px; height:250px; 
+	background:#999; position:relative;
+}
+#featured .ui-tabs-panel .info{ 
+	position:absolute; 
+	bottom:0; left:0; 
+	height:70px; 
+	background: url('images/transparent-bg.png'); 
+}
+#featured .ui-tabs-panel .info a.hideshow{
+	position:absolute; font-size:11px; font-family:Verdana; color:#f0f0f0; right:10px; top:-20px; line-height:20px; margin:0; outline:none; background:#333;
+}
+#featured .info h2{ 
+	font-size:1.2em; font-family:Georgia, serif; 
+	color:#fff; padding:5px; margin:0; font-weight:normal;
+	overflow:hidden; 
+}
+#featured .info p{ 
+	margin:0 5px; 
+	font-family:Verdana; font-size:11px; 
+	line-height:15px; color:#f0f0f0;
+}
+#featured .info a{ 
+	text-decoration:none; 
+	color:#fff; 
+}
+#featured .info a:hover{ 
+	text-decoration:underline; 
+}
+#featured .ui-tabs-hide{ 
+	display:none; 
+}
+*/

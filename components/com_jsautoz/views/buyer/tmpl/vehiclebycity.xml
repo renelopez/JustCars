@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="List Vehicles by City">
+		<message>
+			<![CDATA[List Vehicles by City.]]>
+		</message>
+	</layout>
+	<state>
+		<name>List Vehicles by City</name>
+		<description>List Vehicles by City.</description>
+	</state>
+</metadata>

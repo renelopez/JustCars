@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Buyer Control Panel">
+		<message>
+			<![CDATA[Buyer control panel.]]>
+		</message>
+	</layout>
+	<state>
+		<name>Buyer Control Panel</name>
+		<description>Buyer Control Panel.</description>
+	</state>
+</metadata>

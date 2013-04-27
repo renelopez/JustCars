@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+	<name>COM_JSAUTOZ</name>
+	<creationDate>Jan 21st, 2013</creationDate>
+	<author>Joom Sky</author>
+	<authorEmail>ahmad@burujsolutions.com</authorEmail>
+	<authorURL>www.burujsolutions.com</authorURL>
+	<copyright>Copyright (c) 2012. All rights reserved.</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<version>1.0.3</version>
+	<description>Vehicles buying and selling Component.</description>>
+	
+ 	<!-- Runs on install/uninstall/update;  -->
+	<scriptfile>script.php</scriptfile>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf.sql</file>
+		</sql>
+	</uninstall>
+
+	<update> <!-- Runs on update; New in 2.5 -->
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>jsautoz.php</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		<folder>controllers</folder>
+		<folder>models</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>themes</folder>
+		<folder>views</folder>
+		<folder>lightbox</folder>
+	</files>
+	<languages folder="site/language">
+		<language tag="en-GB">en-GB.com_jsautoz.ini</language>
+	</languages>
+	<administration>
+		<menu img="../administrator/components/com_jsautoz/include/images/jsautoz_logo_small.png" link="option=com_jsautoz&amp;task=view&amp;layout=controlpanel">JS_AUTOZ</menu>
+		<menu  link="option=com_jsautoz&amp;task=view&amp;layout=controlpanel">JS_AUTOZ</menu>
+		<files folder="admin">
+			<filename>controller.php</filename>
+			<filename>jsautoz.php</filename>
+			<filename>index.html</filename>
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>include</folder>
+			<folder>views</folder>
+			<folder>sql</folder>
+
+			<folder>extensions</folder>
+
+		</files>
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB.com_jsautoz.ini</language>
+			<language tag="en-GB">en-GB.com_jsautoz.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

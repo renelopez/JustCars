@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="1.6" group="content" method="upgrade">
+	<name>Vehicles By Make </name>
+	<author>Joom Sky</author>
+	<creationDate>Nov 05, 2011</creationDate>
+	<copyright>(C) 2009 - 2010. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>ahmad@joomsky.com</authorEmail>
+	<authorUrl>www.joomsky.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Usage{vehiclesbymake}.Show New And Used Vehicles By Make from Autoz database. </description>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+				<field name="title" type="text" default="New And Used Vehicles By Make" label="TITLE" description="TITLE" />
+		
+				<field name="shtitle" type="radio" default="1" label="SHOW_TITLE" description="SHOW_HIDE_TITLE">
+					<option value="0">HIDE</option>
+					<option value="1">SHOW</option>
+				</field>
+				<field name="listingstyle" type="list" default="1" label="LISTING_STYLE" description="SELECT_LISTING_STYLE">
+					<option value="1">VERTICAL</option>
+					<option value="2">HORIZONTAL</option>
+				</field>
+				
+				<field name="maketype" type="list" default="1" label="SELECT_VEHICLES_MAKE_TYPE" description="SELECT_VEHICLES_MAKE_TYPE">
+					<option value="1">NEW </option>
+					<option value="2">USED</option>
+					<option value="3">BOTH</option>
+				</field>
+				<field name="snumhvveh" type="radio" default="1" label="SHOW_ONLY_MAKE_HAVE_VEHICLES" description="YES_NO_MAKE_HAVE_VEHICLES">
+					<option value="0">JS_NO</option>
+					<option value="1">JS_YES</option>
+				</field>
+				<field name="sliding" type="radio" default="0" label="SLIDING" description="YES_NO_SLIDING">
+					<option value="0">JS_NO</option>
+					<option value="1">JS_YES</option>
+				</field>
+				<field name="consecutivesliding" type="text" default="3" label="CONSECTIVE_SLIDE" description="CONSECTIVE_SLIDE" />
+				<field name="noofcols" type="text" default="1" label="NO_OF_COLUMN_PER_ROW" description="NO_OF_COLUMN_PER_ROW" />
+				<field name="noofrecord" type="text" default="10" label="Show max. records" description="MAX_RECORDS_100" />
+				<field name="itemid" type="text" default="" label="ITEMID" description="ITEMID" />
+			</fieldset>
+		</fields>
+	</config>
+	<files>
+		<filename plugin="vehiclesbymake">vehiclesbymake.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_vehiclesbymake.ini</language>
+	</languages>
+</extension>

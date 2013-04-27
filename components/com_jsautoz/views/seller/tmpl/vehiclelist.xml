@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="My Vehicles">
+		<message>
+			<![CDATA[My Vehicles.]]>
+		</message>
+	</layout>
+	<state>
+		<name>My Vehicles</name>
+		<description>My Vehicles.</description>
+	</state>
+</metadata>

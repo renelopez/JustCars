@@ -1,0 +1,98 @@
+#jsautoz .star-rating,
+#jsautoz .star-rating a:hover,
+#jsautoz .star-rating a:active,
+#jsautoz .star-rating a:focus,
+#jsautoz .star-rating .current-rating{
+	background: url(star.gif) left -1000px repeat-x;
+}
+#jsautoz .star-rating{
+	position:relative;
+	width:125px;
+	height:25px;
+	overflow:hidden;
+	list-style:none;
+	margin:0;
+	padding:0;
+	background-position: left top;
+}
+#jsautoz .star-rating li{
+	display: inline;
+}
+#jsautoz .star-rating a,
+#jsautoz .star-rating .current-rating{
+	position:absolute;
+	top:0;
+	left:0;
+	text-indent:-1000em;
+	height:25px;
+	line-height:25px;
+	outline:none;
+	overflow:hidden;
+	border: none;
+}
+#jsautoz .star-rating a:hover,
+#jsautoz .star-rating a:active,
+#jsautoz .star-rating a:focus{
+	background-position: left bottom;
+}
+#jsautoz .star-rating a.one-star{
+	width:20%;
+	z-index:6;
+}
+#jsautoz .star-rating a.two-stars{
+	width:40%;
+	z-index:5;
+}
+#jsautoz .star-rating a.three-stars{
+	width:60%;
+	z-index:4;
+}
+#jsautoz .star-rating a.four-stars{
+	width:80%;
+	z-index:3;
+}
+#jsautoz .star-rating a.five-stars{
+	width:100%;
+	z-index:2;
+}
+#jsautoz .star-rating .current-rating{
+	z-index:1;
+	background-position: left center;
+}
+
+/* for an inline rater */
+#jsautoz .inline-rating{
+	display:-moz-inline-block;
+	display:-moz-inline-box;
+	display:inline-block;
+	vertical-align: middle;
+}
+
+/* smaller star */
+#jsautoz .small-star{
+	width:50px;
+	height:10px;
+}
+#jsautoz .small-star,
+#jsautoz .small-star a:hover,
+#jsautoz .small-star a:active,
+#jsautoz .small-star a:focus,
+#jsautoz .small-star .current-rating{
+	background-image: url('../images/small.gif');
+	line-height: 10px;
+	height: 10px;
+}
+#jsautoz ul.jsautoz-stars-small{height:22px;width:110px;padding:0!important;margin:0!important;}
+#jsautoz ul.jsautoz-stars li, ul.jsautoz-stars-small li{background-position:0!important;padding:0!important;margin:0!important;}
+#jsautoz ul.jsautoz-stars-small, ul.jsautoz-stars-small li a:hover, ul.jsautoz-stars-small li.current-rating{background-image:url('../images/small.gif')!important;background-color:transparent!important;background-repeat:repeat-x!important;background-position:left -1000px;}
+#jsautoz ul.jsautoz-stars,ul.jsautoz-stars-small{background-position:left top;list-style-image:none;list-style-position:outside;list-style-type:none;margin:0pt;overflow:hidden;padding:0pt;position:relative;}
+#jsautoz ul.jsautoz-stars li a, ul.jsautoz-stars li.current-rating,ul.jsautoz-stars-small li a, ul.jsautoz-stars-small li.current-rating{border:medium none;cursor:pointer;left:0pt;outline-color:-moz-use-text-color;outline-style:none;outline-width:medium;overflow:hidden;position:absolute;text-indent:-1000em;top:0pt;}
+#jsautoz ul.jsautoz-stars-small li a, ul.jsautoz-stars-small li.current-rating{height:22px;line-height:22px;}
+#jsautoz ul.jsautoz-stars li a:hover,ul.jsautoz-stars-small li a:hover{background-position:left bottom!important;}
+#jsautoz li a.one-star{width:10%;padding:0;margin:0;z-index:6;}
+#jsautoz li a.two-stars{width:20%;padding:0;margin:0;z-index:5;}
+#jsautoz li a.three-stars{width:30%;padding:0;margin:0;z-index:4;}
+#jsautoz li a.four-stars{width:40%;padding:0;margin:0;z-index:3;}
+#jsautoz li a.five-stars{width:50%;padding:0;margin:0;z-index:1;}
+
+
